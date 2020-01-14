@@ -1,13 +1,9 @@
 
 # file_util | by stencylxd
 
-require "fileutils"
-Process.setproctitle("file_util")
-Dir.chdir("/")
-puts nil
-puts "Note: You may encounter errors if you are not root."
-puts "file_util (;"
-puts "Type 'use' for help!"
+require "fileutils"; Process.setproctitle("file_util"); Dir.chdir("/")
+puts nil; puts "Note: You may encounter errors if you are not root."
+puts "file_util (;"; puts "Type 'use' for help!"
 
 while true do # err layback loop
 while true do # main program loop

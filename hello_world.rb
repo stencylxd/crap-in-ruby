@@ -1,5 +1,5 @@
 
-# First ruby program I ever made.
+# First ruby program I ever made. (compacted)
 # hello_world.rb | stencylxd 2019
 
 answer = nil; puts "Hello World"; until (answer == "y") do; print "Enter your name: "
