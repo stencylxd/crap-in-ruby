@@ -18,6 +18,6 @@ on :key_held do |e|; if e.key == "space"; jumpin = true; else; key = e.key; end;
       Rectangle.new(color: "brown", y: 380, height: 50, width: 1000, z: 0)
       Rectangle.new(color: "green", y: 345, height: 35, width: 1000, z: 4); p1.add
       p1.x = 450 if start == true; start = false if start == true; end
-      50.times { puts nil }; puts "AfterFrameKey: " + key.to_s unless key == ""
+      puts "AfterFrameKey: " + key.to_s unless key == ""
       puts "AfterFrameKey: none" if key == ""; puts "CurrentlyJumping: " + jumpin.to_s
-      puts "ConflictsRenderedIn: " + nume.to_s; key = ""; end; show
+      puts "ConflictsRenderedIn: " + nume.to_s + "\n\n\n"; key = ""; end; show
