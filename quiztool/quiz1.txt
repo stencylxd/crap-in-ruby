@@ -1,0 +1,19 @@
+Cool Quiz
+-
+What is the name of this quiz?
+Bad Quiz
+Cool Quiz
+Kid Quiz
+Quiz Name
+2
+end
+
+Question name here
+answer 1 here
+answer 2 here
+answer 3 here
+answer 4 here
+number of correct answer here
+
+
+

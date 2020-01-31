@@ -1,4 +1,0 @@
-
-# CLIquiztool || stencylxd
-
-# Coming soon...
