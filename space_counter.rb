@@ -1,5 +1,6 @@
 
-# spacebar counter @stencylxd
+# spacebar counter || stencylxd 2019
+
 require "ruby2d"
 set background: "navy", title: "spacebar counter", width: 1000, height: 600
 count = 0; key = "space"; a1 = 0; z1 = 11

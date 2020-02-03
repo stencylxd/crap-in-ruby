@@ -1,6 +1,6 @@
 
 # mvo_array_space || stencylxd 2020
-# This is a function that moves a object one space in a array.
+# This is 2 functions that moves a object one space in a array. (up or down)
 
 public;def mvo(x);case x;when 1;raise"mvo: given pram is more than array length." # Method for fallback errors.
 abort;when 2;raise"mvo: given array has no objects.";abort;when 3

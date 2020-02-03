@@ -1,5 +1,5 @@
 
-# CLIquiztool || stencylxd
+# CLIquiztool || stencylxd (still in progress)
 
 system("cls"); print "\nPlease enter the path of the quizfile: "
 quizName = gets.chomp.to_s; raise "Quiz does not exist." if File.exist?(quizName) == false
