@@ -2,7 +2,7 @@
 =begin
 
 This is a small game that I used to test my skills.
-It is one line.
+It is one line because I was bored lol.
 ---------------------------------------------------
 bigger_cubes.rb | stencylxd 2019
 585x 435y default screen size
