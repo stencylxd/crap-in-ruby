@@ -2,7 +2,7 @@
 # pong, but for my dad | stencylxd 2020
 
 require "ruby2d"; set width: 1000, height: 600, title: "Pong | stencylxd"
-$ballDirection = :none; $start = false
+$ballDirection = :none; $start = false; $rmed = 3;
 $scr1 = 0; $scr2 = 0; $startB = false
 $diff = :impossible; $paused = true
 $right = Rectangle.new(color: "blue", x: 940, y: 250, height: 100, width: 10)
@@ -19,7 +19,8 @@ def startGame; clear; $b = Square.new(color: "white", size: 25, x: 475, y: 275)
 on :key_held do |e|
   $p1.y -= 3 if (e.key == "up") && $p1.y > 0 && $startB && $paused != true
   $p1.y += 3 if (e.key == "down") && $p1.y < 500 && $startB && $paused != true
- $start = true if e.key == "return" && $startB == false; end
+ $start = true if e.key == "return" && $startB == false; case e.key; when "1"
+ $diff = :easy; when "2"; $diff = :medium; when "3"; $diff = :impossible; end; end
 def wallHit(n = false, sym = $ballDirection); if n == true
     return :leftdown if sym == :rightdown
     return :rightdown if sym == :leftdown
@@ -56,6 +57,11 @@ Text.new("Press Enter To Play!", y: 480, x: 410); update do; if $startB == false
   elsif $b.x > 1000; $scr1 += 1; startGame; set color: "random"; end
 
     $right.y = ($b.y - 25) if $diff == :impossible
+
+    if $diff == :medium && $b.x > 500; $rmed = rand(0..1) if $rmed == 3
+    if $rmed == 1; $right.y =+ 3 if $right.y < $b.y
+    $right.y =- 3 if $right.y > $b.y; elsif $rmed == 0
+  end; end
 
     if $scr1 == 9
       $paused = true; $startB = false; clear
