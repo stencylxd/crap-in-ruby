@@ -2,7 +2,7 @@
 # pong, but for my dad | stencylxd 2020
 
 require "ruby2d"; set width: 1000, height: 600, title: "Pong!"
-$song = Music.new('my plea.wav'); $song.play; $song.loop = true
+$song = Music.new('my plea.wav'); $song.loop = true; $song.play
 $ballDirection = :none; $start = false; $rmed = 3;
 $scr1 = 0; $scr2 = 0; $startB = false
 $diff = :impossible; $paused = true
@@ -78,4 +78,4 @@ Text.new("Press 3 for Impossible Mode", y: 460, x: 360, size: 25); update do; if
       Text.new("CPU wins! (enter to retry)", y: 480, x: 410)
       Image.new("cover.png", width: 436, height: 196, x: 275, y: 100)
       $scr1 = 0; $scr2 = 0; end; $right.y = 505 if $right.y > 505
-    $right.y = 0 if $right.y < 0; end; end; show
+    $right.y = 0 if $right.y < 0; end; $song.loop; end; show
