@@ -2,4 +2,4 @@
 Artist: Mooph (https://www.youtube.com/user/TheMooph)
 Original Tune: Jack Stauber (https://www.youtube.com/user/JackStauber)
 
-"pong.rb", "cover.png", "icon.ico", and "pong.exe" are all under the licence of the Github Repo (crap-in-ruby). 
+"pong.rb", "cover.png", "icon.ico", and "pong.exe" are all under the license of the GitHub Repo (crap-in-ruby). 
