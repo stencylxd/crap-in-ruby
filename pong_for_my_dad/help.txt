@@ -1,0 +1,8 @@
+Controls:
+All Controls can be used at all times.
+
+1 = Easy Mode
+2 = Hard Mode
+3 = Impossible Mode
+M = Toggle Music
+ESCAPE = Exit Game
