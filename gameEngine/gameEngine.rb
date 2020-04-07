@@ -3,6 +3,7 @@
 
 # Variables (Simple game settings):
 $p1 = nil # Main RUBY2D Rectangle character
+$title = "Game Engine" # Set the title of window
 # Used for stuff in code
 $paused = false
 $running = false
@@ -24,7 +25,7 @@ ret = ($jumpHeight - sndOff); else; ret = ($jumpHeight + sndOff); end; return re
 raise "Variable jumpHeight is less or equal to given number. (rndHeight function)"; end; end
 tick = 0; jumpin = false; $start = true; en = []; $ob = []; ekey = nil; tick2 = 0; hit = 0
 public; def bgen; @q = nil; until @q == 550 || @q == 500 || @q == 450 || @q == 400; @q = rand(400..550); end; return @q; end
-require "ruby2d"; set background: "black", title: "Survival Documentary", width: 1000, height: 600
+require "ruby2d"; set background: "black", title: $title, width: 1000, height: 600
  def pauseGame; $pauseMessage = Text.new("The game is not paused, press escape to continue.", x: 160, size: 30, y: 100,
     color: "white", z: 10000000); if $paused == false; clear; reloadMap; end; end; $speed = 3
    def reloadMap; clear; 2.times { blo = []; blob = []; bls = []; blsb = []; bld = []; tmb = []
