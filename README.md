@@ -1,7 +1,7 @@
-# crap-in-ruby
-Garbage stuff I wrote in the Ruby Programming Language.<br>
+# ruby-projects
+Stuff I wrote in the Ruby Programming Language.<br>
 
-# Executing Garbage
+# Executing Programs
 You will need:<br>
 
 - [The Ruby Compiler](https://www.ruby-lang.org/en/)
